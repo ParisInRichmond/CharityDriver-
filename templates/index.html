@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join our Newsletter </title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+    </div>
+    <div class="container">
+        <img src="{{ url_for('static', filename='charity.png') }}" alt="Logo" width="150">
+        <h1>Join our Newsletter</h1>
+        <form action="/signup" method="post">
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+</body>
+</html>

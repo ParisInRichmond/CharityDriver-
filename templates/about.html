@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="static/about.css">
+  <title>Landing Page</title>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="/">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Cities 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Oakland, CA</a>
+      <a href="#">San Francisco, CA</a>
+    </div>
+  </div>
+  <a href="#">Stories</a>
+  <div class="search-container">
+    <form>
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit">Search</button>
+    </form>
+  </div>
+  <a href="#" style="float:right">Donate</a>
+</div>
+
+<div style="padding:20px">
+  <h2>Locate the drop a.i the funnel</h2>
+  <p>Charity Driver is a platform that uses AI-integrated maps to pinpoint areas in the community allowing people to funnel resources to the homeless.</p>
+</div>
+<div class = "world-map">
+  <img src="{{ url_for('static', filename='Oakland.jpg') }}" alt="map">
+<div class = "pin oakland">
+  <span>East Oakland</span>
+</div>
+<div class = "pin west">
+<span> West Oakland</span>
+</div>
+<div class = "pin north">
+<span>  North Oakland</span>
+</div>
+<div class = "pin deep">
+  <span>  Deep East Oakland</span>
+  </div>
+  <div class="container">
+ 
+  <div class="map-container">
+      <h1>Map Section</h1>
+      <!-- Add your Google Maps iframe code here -->
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.580785361224!2d-122.41969928464683!3d37.77492997975233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2sin!4v1644147750467!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+  </div>
+
+</body>
+</html>
